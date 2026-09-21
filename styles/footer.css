@@ -6,11 +6,10 @@
 footer {
   display: flex;
   justify-content: center;
-
   padding: 20px;
-  border-top: 2px solid #000000;
-  background-color: #996644;
   text-align: center;
+  background-color: #996644;
+  border-top: 2px solid #000000;
 }
 
 footer .content {

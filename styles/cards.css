@@ -10,12 +10,10 @@
 }
 
 .card {
-  grid-column: span 12;
-
   display: flex;
   flex-direction: column;
+  grid-column: span 12;
   gap: 20px;
-
   width: 100%;
 }
 
@@ -32,13 +30,12 @@
 
 .card .content {
   display: flex;
-  gap: 20px;
   flex-direction: column;
+  gap: 20px;
 }
 
 .card .image img {
   display: block;
-
   width: 100%;
   height: 300px;
   object-fit: cover;
