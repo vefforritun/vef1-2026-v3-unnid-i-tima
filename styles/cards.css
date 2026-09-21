@@ -1,0 +1,46 @@
+/**
+ * TODO custom variables
+ * TODO skalanlegt með css grid
+ */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;  
+}
+
+.card {
+  grid-column: span 12;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 100%;
+}
+
+@media (width >= 700px) {
+  .card {
+    grid-column: span 6;
+  }
+}
+
+.card h2 {
+  flex: 1;
+  font-size: 2rem;
+}
+
+.card .content {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.card .image img {
+  display: block;
+
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}

@@ -1,0 +1,18 @@
+/**
+ * TODO custom variables
+ * TODO skalanlegt letur
+ */
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: var(--font-size-header);
+}
+
+@media (width >= 500px) {
+  header h1 {
+    font-size: var(--font-size-header-large);
+  }
+}

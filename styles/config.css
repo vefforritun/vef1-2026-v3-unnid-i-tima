@@ -1,0 +1,70 @@
+/**
+ * Stillingar fyrir verkefnið, allar sem CSS custom properties (breytur).
+ *
+ * Flestöll gildi í verkefni eru sótt hingað fyrir utan `width: 100%`, `font-size: 1rem` og þess háttar.
+ */
+
+:root {
+  /** Letur **/
+
+  /* Grunnletur */
+  --font-family-base: inter, helvetica, arial, sans-serif;
+  --font-size-base: 16px;
+
+  /* Haus síðu, stærri á stærri skjám. */
+  --font-size-header: 2rem;
+  --font-size-header-large: 3.25rem;
+
+  /* Valmynd, stærri á stærri skjám. */
+  --font-size-nav: 1.125rem;
+  --font-size-nav-large: 1.5rem;
+
+  /* Fyrirsagnir korta á forsíðu og svæða í formi. */
+  --font-size-card-title: 2rem;
+  --font-size-legend: 1.5rem;
+
+  /** Bil **/
+
+  /* Eitt bil, öll önnur bil eru margfeldi af því. */
+  --spacing: 10px;
+  --spacing-double: calc(var(--spacing) * 2);
+  --spacing-triple: calc(var(--spacing) * 3);
+
+  /** Grind **/
+
+  /* Dálkar og bil á milli þeirra, notað í kortum og fæti. */
+  --columns: 12;
+  --gutter: 20px;
+
+  /* Bil frá vinstri og hægri brún skjás */
+  --offset: 20px;
+
+  /** Breiddir **/
+
+  /* Hámarksbreidd efnis */
+  --max-width: 1100px;
+
+  /* Lágmarksbreidd á töflu */
+  --min-width-table: 700px;
+
+  /* Breidd á efni með offset, sú breidd sem meginmál þarf að vera þegar við
+  höfum minna pláss en --max-width í vafra */
+  --width-offset: calc(100% - (2 * var(--offset)));
+
+  /** Litir **/
+
+  /* Grunnlitir */
+  --color-background: #ffeedd;
+  --color-text: #000000;
+  --color-border: #000000;
+
+  /* Aðrir litir með lýsandi nöfnum. */
+  --color-accent: #996644;
+  --color-accent-contrast: #ffeedd;
+  --color-table-stripe: #eebb99;
+  --color-input-background: #ffffff;
+
+  /** Annað **/
+
+  /* TODO hér þurfið þið að bæta við nokkrum stillingum */
+}

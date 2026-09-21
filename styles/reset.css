@@ -1,0 +1,22 @@
+/**
+ * Fjarlægja gefið margin og padding af öllu.
+ */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/**
+ * Setja border-box á öll element
+ * => reiknum stærð box sem width + margin
+ * padding + border ekki inní því.
+ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

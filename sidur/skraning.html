@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skráning í ferð</title>
+    <meta name="description" content="Skráðu þig í þína draumaferð." />
+    <meta property="og:title" content="Skráning í ferð" />
+    <meta property="og:description" content="Skráðu þig í þína draumaferð." />
+    <meta property="og:image" content="../myndir/sharing.jpg" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Skráning í ferð</h1>
+      </header>
+
+      <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Forsíða</a></li>
+          <li><a href="./um.html">Um fyrirtækið</a></li>
+          <li><a href="./ferdir.html">Ferðir</a></li>
+          <li><strong>Skráning í ferð</strong></li>
+        </ul>
+      </nav>
+
+      <main id="efni">
+        <form method="get" action=".">
+          <fieldset>
+            <legend>Ferð</legend>
+            <div>
+              <label for="ferd">Hvaða ferð viljið þið skrá ykkur á?</label>
+              <select id="ferd" name="ferd">
+                <option>Jöklaklifur</option>
+                <option>Róleg gögnuferð á Suðurlandi</option>
+                <option>Gullnihringurinn</option>
+                <option>Silfurkassinn</option>
+                <option>Bronsþríhyrningurinn</option>
+                <option>Köfunarferð</option>
+                <option>Norðurljósaferð</option>
+                <option>Reykjavíkurrölt</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Hópur</legend>
+            <div>
+              <label for="hopur_fjoldi">Fjöldi í hóp</label>
+              <input
+                type="number"
+                id="hopur_fjoldi"
+                name="hopur_fjoldi"
+                min="1"
+                max="20"
+                value="1"
+                required
+              />
+            </div>
+            <div>
+              <label for="hopur_upplysingar">
+                Upplýsingar um hóp — hver er reynsla hópsins?
+              </label>
+              <textarea
+                id="hopur_upplysingar"
+                name="hopur_upplysingar"
+                rows="4"
+                cols="50"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <label for="hopur_email">Netfang tengiliðar</label>
+              <input
+                type="email"
+                id="hopur_email"
+                name="hopur_email"
+                required
+              />
+            </div>
+            <div>
+              <label for="hopur_simanumer">Símanúmer</label>
+              <input
+                type="tel"
+                id="hopur_simanumer"
+                name="hopur_simanumer"
+                placeholder="000-0000"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Dagsetning og tími</legend>
+            <div>
+              <label for="dagsetning">Hvenær viljið þið koma?</label>
+              <input type="date" id="dagsetning" name="dagsetning" />
+            </div>
+            <div>
+              <label for="timi">Hvaða tíma?</label>
+              <select id="timi" name="timi" required>
+                <option value="">—Veldu—</option>
+                <option value="fyrir-hadegi">Fyrir hádegi</option>
+                <option value="eftir-hadegi">Eftir hádegi</option>
+                <option value="kvold">Kvöld</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Bóka</legend>
+            <div>
+              <label>
+                <input type="checkbox" name="skilmalar" required />
+                Samþykki <a href="./um.html" target="_blank">skilmála</a>
+              </label>
+            </div>
+            <div>
+              <button class="button" type="submit">Panta og greiða</button>
+            </div>
+          </fieldset>
+        </form>
+
+        <p><a href="../index.html">Aftur á forsíðu</a></p>
+      </main>
+
+      <footer>
+        <section>
+          <h2>Opnunartímar</h2>
+          <dl>
+            <dt>Mánudaga til föstudaga</dt>
+            <dd>12:00–18:00</dd>
+            <dt>Laugardagar</dt>
+            <dd>14:00–16:00</dd>
+            <dt>Sunnudagar</dt>
+            <dd>Lokað</dd>
+          </dl>
+        </section>
+
+        <section>
+          <h2>Hafðu samband</h2>
+          <ul>
+            <li>Ferðaþjónustufyrirtækið</li>
+            <li>Ferðagata 1</li>
+            <li>101 Reykjavík</li>
+            <li><a href="tel:234-2345">Sími 234-2345</a></li>
+            <li>
+              <a href="mailto:ferdathjonustufyrirtaekid@example.org"
+                >ferdathjonustufyrirtaekid@example.org</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Samfélagsmiðlar</h2>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/HaskoliIslands/">Facebook</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/haskoli_islands/">Instagram</a>
+            </li>
+            <li><a href="https://www.youtube.com/user/HIvarp">YouTube</a></li>
+          </ul>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>

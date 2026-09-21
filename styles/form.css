@@ -1,0 +1,47 @@
+/**
+ * TODO custom variables
+ * TODO skalanlegt
+ */
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  width: 50%;
+}
+
+fieldset {
+  border: 0;
+}
+
+fieldset legend {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+fieldset div {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+fieldset div label {
+  display: block;
+}
+
+fieldset input,
+fieldset select,
+fieldset textarea {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #000000;
+
+  background-color: #ffffff;
+}
+
+fieldset input[type='checkbox'] {
+  display: inline-block;
+  margin-right: 10px;
+  width: auto;
+}

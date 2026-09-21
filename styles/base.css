@@ -1,0 +1,42 @@
+/* Hér þarf engu að breyta, sjáið hvernig config notað fyrir body */
+
+/** Letur **/
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('../fonts/Inter.ttf') format('truetype');
+}
+
+/**
+ * Lætur myndir aldrei taka meira pláss en
+ * foreldri skilgreinir.
+ */
+img {
+  max-width: 100%;
+}
+
+/**
+ * Litur á hlekkjum erfist frá foreldri
+ */
+a {
+  color: inherit;
+}
+
+/**
+ * Leturstærð erfist frá foreldri í form elements.
+ */
+input,
+button,
+select,
+textarea {
+  font-size: inherit;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
