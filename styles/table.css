@@ -1,0 +1,19 @@
+table th, table td {
+    padding: var(--spacing-half);
+}
+
+table {
+    min-width: 700px;
+}
+
+.table-wrapper {
+    background-color: pink;
+    overflow: auto;
+}
+
+@media (width >= 900px) {
+  .table-wrapper {
+      overflow:visible;
+    background-color: green;
+  }
+}
