@@ -26,7 +26,8 @@
   /** Bil **/
 
   /* Eitt bil, öll önnur bil eru margfeldi af því. */
-  --spacing: 10px;
+  --spacing: 12px;
+  --spacing-quart: calc(var(--spacing) * 1/4);
   --spacing-double: calc(var(--spacing) * 2);
   --spacing-triple: calc(var(--spacing) * 3);
 
